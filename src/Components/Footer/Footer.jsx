@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             
-            <div className="pt-[600px] w-8/12 lg:ml-80">
+            <div className="pt-[100px] w-8/12 lg:ml-80">
             <h1 className="text-3xl font-bold lg:pl-64">Gadget Heaven</h1>
             <p className="text-[#09080F99] lg:pl-44 pt-4">Leading the way in cutting-edge technology and innovation</p>
             <footer className="footer  p-10">

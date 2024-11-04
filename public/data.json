@@ -1,0 +1,236 @@
+ [
+      {
+        "product_id": "LAP001",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/J3WLpx3/download-6.jpg",
+        "category": "Laptop",
+        "price": 999.99,
+        "description": "13.4-inch display, Intel i7, 16GB RAM, 512GB SSD.",
+        "specification": {
+          "screen_size": "13.4 inches",
+          "processor": "Intel i7",
+          "RAM": "16GB",
+          "storage": "512GB SSD"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "LAP002",
+        "product_title": "Apple MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/YPhNBRz/download-1.jpg",
+        "category": "Laptop",
+        "price": 1999.99,
+        "description": "14-inch Liquid Retina, M1 Pro, 16GB RAM, 512GB SSD.",
+        "specification": {
+          "screen_size": "14 inches",
+          "processor": "Apple M1 Pro",
+          "RAM": "16GB",
+          "storage": "512GB SSD"
+        },
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "LAP003",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/9NsW0nx/images-1.jpg",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "13.3-inch FHD, Intel i7, 16GB RAM, 1TB SSD.",
+        "specification": {
+          "screen_size": "13.3 inches",
+          "processor": "Intel i7",
+          "RAM": "16GB",
+          "storage": "1TB SSD"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "LAP004",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/QK1rnfs/images-2.jpg",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "14-inch FHD, Intel i7, 16GB RAM, 512GB SSD.",
+        "specification": {
+          "screen_size": "14 inches",
+          "processor": "Intel i7",
+          "RAM": "16GB",
+          "storage": "512GB SSD"
+        },
+        "availability": false,
+        "rating": 4.6
+      },
+      {
+        "product_id": "LAP005",
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/3mHb8Lj/images-3.jpg",
+        "category": "Laptop",
+        "price": 1599.99,
+        "description": "14-inch QHD, AMD Ryzen 9, 16GB RAM, 1TB SSD.",
+        "specification": {
+          "screen_size": "14 inches",
+          "processor": "AMD Ryzen 9",
+          "RAM": "16GB",
+          "storage": "1TB SSD"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "LAP006",
+        "product_title": "Acer Swift 3",
+        "product_image": "https://i.ibb.co.com/60TFcbK/images-4.jpg",
+        "category": "Laptop",
+        "price": 749.99,
+        "description": "14-inch FHD, Intel i5, 8GB RAM, 256GB SSD.",
+        "specification": {
+          "screen_size": "14 inches",
+          "processor": "Intel i5",
+          "RAM": "8GB",
+          "storage": "256GB SSD"
+        },
+        "availability": true,
+        "rating": 4.3
+      },
+      {
+        "product_id": "PHN001",
+        "product_title": "Samsung Galaxy S21",
+        "product_image": "https://i.ibb.co.com/yRYtdwS/images-7.jpg",
+        "category": "Phone",
+        "price": 799.99,
+        "description": "6.2-inch AMOLED, Snapdragon 888, 8GB RAM, 128GB.",
+        "specification": {
+          "screen_size": "6.2 inches",
+          "processor": "Snapdragon 888",
+          "RAM": "8GB",
+          "storage": "128GB"
+        },
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "PHN002",
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://i.ibb.co.com/xqJdHzY/images-9.jpg",
+        "category": "Phone",
+        "price": 999.99,
+        "description": "6.1-inch Super Retina XDR, A15 Bionic, 128GB storage.",
+        "specification": {
+          "screen_size": "6.1 inches",
+          "processor": "A15 Bionic",
+          "storage": "128GB"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "PHN003",
+        "product_title": "Google Pixel 6",
+        "product_image": "https://i.ibb.co.com/j4wWYdC/images-10.jpg",
+        "category": "Phone",
+        "price": 699.99,
+        "description": "6.4-inch OLED, Google Tensor, 8GB RAM, 128GB.",
+        "specification": {
+          "screen_size": "6.4 inches",
+          "processor": "Google Tensor",
+          "RAM": "8GB",
+          "storage": "128GB"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "PHN004",
+        "product_title": "OnePlus 9",
+        "product_image": "https://i.ibb.co.com/8KyRZ7C/images-11.jpg",
+        "category": "Phone",
+        "price": 729.99,
+        "description": "6.55-inch AMOLED, Snapdragon 888, 12GB RAM, 256GB.",
+        "specification": {
+          "screen_size": "6.55 inches",
+          "processor": "Snapdragon 888",
+          "RAM": "12GB",
+          "storage": "256GB"
+        },
+        "availability": false,
+        "rating": 4.4
+      },
+      {
+        "product_id": "HPH001",
+        "product_title": "Sony WH-1000XM4",
+        "product_image": "https://i.ibb.co.com/ZJrBjDw/download-5.jpg",
+        "category": "Headphone",
+        "price": 349.99,
+        "description": "Wireless noise-canceling over-ear headphones.",
+        "specification": {
+          "type": "Over-ear",
+          "connectivity": "Wireless",
+          "noise_cancellation": "Active"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "HPH002",
+        "product_title": "Bose QuietComfort 35 II",
+        "product_image": "https://i.ibb.co.com/KsJqbbC/download-3.jpg",
+        "category": "Headphone",
+        "price": 299.99,
+        "description": "Comfortable, wireless noise-canceling headphones.",
+        "specification": {
+          "type": "Over-ear",
+          "connectivity": "Wireless",
+          "noise_cancellation": "Active"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "HPH003",
+        "product_title": "Apple AirPods Pro",
+        "product_image": "https://i.ibb.co.com/vh97DVm/download-4.jpg",
+        "category": "Headphone",
+        "price": 249.99,
+        "description": "Wireless earbuds with active noise cancellation.",
+        "specification": {
+          "type": "Earbuds",
+          "connectivity": "Wireless",
+          "noise_cancellation": "Active"
+        },
+        "availability": false,
+        "rating": 4.5
+      },
+      {
+        "product_id": "SW001",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/QXSN93t/download.jpg",
+        "category": "Smart Watch",
+        "price": 399.99,
+        "description": "Advanced health and fitness tracking smartwatch.",
+        "specification": {
+          "screen_size": "1.9 inches",
+          "connectivity": "Bluetooth, WiFi",
+          "battery_life": "18 hours"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "SW002",
+        "product_title": "Samsung Galaxy Watch 4",
+        "product_image": "https://i.ibb.co.com/C5BmLV5/download-2.jpg",
+        "category": "Smart Watch",
+        "price": 249.99,
+        "description": "Comprehensive fitness tracking with Wear OS.",
+        "specification": {
+            "screen_size": "1.9 inches",
+            "connectivity": "Bluetooth, WiFi",
+            "battery_life": "18 hours"
+          },
+          "availability": true,
+          "rating": 4.7}
+ ]
+  

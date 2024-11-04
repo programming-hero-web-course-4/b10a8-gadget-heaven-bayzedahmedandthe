@@ -1,6 +1,7 @@
 import { PiShoppingCart } from "react-icons/pi";
 import { GiSelfLove } from "react-icons/gi";
 import bannerImg from "../../assets/banner.jpg"
+import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div>
@@ -26,8 +27,8 @@ const Header = () => {
                                 </div>
                                 <ul
                                     tabIndex={0}
-                                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                    <li ><a>Home</a></li>
+                                    className=" menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                     <li className="text-white"><NavLink to="/">Home </NavLink></li>
 
                                     <li><a>Statistics</a></li>
                                     <li ><a>Dashboard</a></li>
@@ -36,11 +37,11 @@ const Header = () => {
                             <a className="text-xl font-bold text-white">Gadget Heaven</a>
                         </div>
                         <div className="navbar-center hidden lg:flex relative">
-                            <ul className="menu menu-horizontal px-1">
-                                <li className="text-white"><a>Home</a></li>
+                            <ul className=" menu-horizontal  px-1">
+                                <li className="text-white "><NavLink to="/">Home </NavLink></li>
 
-                                <li className="text-white"><a>Statistics</a></li>
-                                <li className="text-white"><a>Dashboard</a></li>
+                                <li className="text-white pl-6"><a>Statistics</a></li>
+                                <li className="text-white pl-6"><a>Dashboard</a></li>
                             </ul>
                         </div>
                         <div className="navbar-end flax gap-4">
@@ -51,7 +52,7 @@ const Header = () => {
                 </div>
             </section>
             {/* Banner section */}
-            <section className="w-11/12 mx-auto bg-[#9538E2] pt-10 ">
+            <section className="w-11/12 mx-auto bg-[#9538E2] pt-10 rounded-b-3xl">
                 <h1 className="text-center text-white font-bold text-5xl">Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories</h1>
                 <p className="text-center text-[#FFFFFF] pt-6">Explore the latest gadgets that will take your experience to  the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
                 <div className="text-center">
