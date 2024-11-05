@@ -2,20 +2,17 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaDollarSign } from "react-icons/fa6";
 import { PiShoppingCart } from "react-icons/pi";
 import { GiSelfLove } from "react-icons/gi";
-
-
+import { addProducts, getAllProducts } from "../../Utils";
 
 const ProductDetails = () => {
     const { product_id } = useParams();
     const data = useLoaderData();
-    console.log(data);
     const id = parseInt(product_id)
-    console.log(id)
     const product = data.find(product => product.product_id == id)
-    console.log(product);
     const { product_image, product_title, price, description, specification, rating } = product || {};
-
-
+    const handleAdd = (product) => {
+        addProducts(product)
+    }
     return (
         <div >
             <div className="bg-[#9538E2] relative">
@@ -24,8 +21,8 @@ const ProductDetails = () => {
             </div>
             <div className="bg-white p-8 rounded-xl w-3/5 relative bottom-20  left-64">
                 <div className="flex items-center gap-6 ">
-                    <div className="bg-gray-200 rounded-xl h-[400px]">
-                        <img className="rounded-xl" src={product_image} alt="" />
+                    <div className=" h-[400px]">
+                        <img className="rounded-xl mt-28" src={product_image} alt="" />
                     </div>
                     <div>
                         <h1 className="font-semibold text-3xl pb-2">{product_title}</h1>
@@ -35,7 +32,7 @@ const ProductDetails = () => {
                         <p className="font-bold text-xl pt-3">Specification:</p>
                         {
 
-                            specification && specification.map(speci => <ul><li>{speci}</li></ul>)
+                            specification && specification.map((speci, idx) => <ul key={idx}><li>{speci}</li></ul>)
                         }
                         <h2 className="font-bold text-xl pt-1">rating</h2>
                         <div className="flex items-center gap-3 pt-3">
@@ -53,7 +50,9 @@ const ProductDetails = () => {
                             <p>{rating}</p>
                         </div>
                         <div className="flex items-center gap-3 pt-4">
-                            <button className="font-bold flex items-center gap-2 bg-[#9538E2] px-4 py-2 rounded-3xl text-white">Add to cart <p className="text-2xl"><PiShoppingCart /></p></button>
+                            <button
+                            onClick={() => handleAdd(product)}
+                                className="font-bold flex items-center gap-2 bg-[#9538E2] px-4 py-2 rounded-3xl text-white">Add to cart <p className="text-2xl"><PiShoppingCart /></p></button>
                             <button className="border-2 rounded-full p-3"><GiSelfLove /></button>
                         </div>
                     </div>
@@ -61,7 +60,6 @@ const ProductDetails = () => {
             </div>
 
         </div>
-
     );
 };
 

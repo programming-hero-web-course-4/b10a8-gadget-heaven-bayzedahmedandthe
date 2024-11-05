@@ -19,8 +19,8 @@ const Home = () => {
                     <img className="border-2 p-4 lg:h-[580px] lg:w-[1110px] rounded-xl mx-auto " src={bannerImg} alt="" />
                 </div>
             </div>
-            <div className="flex gap-10">
-                <div className="bg-white h-[455px] rounded-2xl px-10 py-4">
+            <div className="lg:flex gap-10">
+                <div className="bg-white h-[455px] rounded-2xl px-10 py-4 ">
                     <button className="bg-gray-200 w-32 py-2 rounded-3xl">All Product</button><br />
                     <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">Laptops</button><br />
                     <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">IPhone</button><br />
@@ -32,7 +32,7 @@ const Home = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
 
                     {
-                        data.map(product => <Product product={product}></Product>)
+                        data.map(product => <Product key={product.product_id} product={product}></Product>)
                     }
                 </div>
             </div>

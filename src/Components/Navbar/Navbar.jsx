@@ -1,7 +1,14 @@
 import { PiShoppingCart } from "react-icons/pi";
 import { GiSelfLove } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getAllProducts } from "../../Utils";
 const Navbar = () => {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        const addProduct = getAllProducts();
+        setProducts(addProduct)
+    }, [])
     return (
         <div>
             {/* Navbar section */}
@@ -30,7 +37,7 @@ const Navbar = () => {
                                     <li className="text-white"><NavLink to="/">Home </NavLink></li>
 
                                     <li><a>Statistics</a></li>
-                                    <li ><a>Dashboard</a></li>
+                                    <li ><Link to={'/deshboard'}>Deshboard</Link></li>
                                 </ul>
                             </div>
                             <a className="text-xl font-bold text-white">Gadget Heaven</a>
@@ -40,12 +47,14 @@ const Navbar = () => {
                                 <li className="text-white "><NavLink to="/">Home </NavLink></li>
 
                                 <li className="text-white pl-6"><a>Statistics</a></li>
-                                <li className="text-white pl-6"><a>Dashboard</a></li>
+                                <li className="text-white pl-6"><Link to={'/deshboard'}>Deshboard</Link></li>
                             </ul>
                         </div>
                         <div className="navbar-end flax gap-4">
-                            <p className=" h-8 w-8 rounded-full flex justify-center pt-2 bg-white"><PiShoppingCart /></p>
-                            <p className=" h-8 w-8 rounded-full flex justify-center pt-2 bg-white"><GiSelfLove /></p>
+                            <h3 className=" h-12 w-12 rounded-full flex  pt-2 bg-white relative"><p className="pl-2 pt-[3px] text-2xl"><PiShoppingCart /></p>
+                            <h5 className="text-red-700 font-medium text-2xl  pl-[2px] p-b-[8px] ">{products.length}</h5>
+                            </h3>
+                            <button className=" h-12 w-12 rounded-full flex justify-center pt-[3px] bg-white text-2xl"><p className="pt-2"><GiSelfLove /></p></button>
                         </div>
                     </div>
                 </div>

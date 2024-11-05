@@ -96,7 +96,7 @@
         "rating": 4.3
       },
       {
-        "product_id": "01",
+        "product_id": "41",
         "product_title": "Samsung Galaxy S21",
         "product_image": "https://i.ibb.co.com/yRYtdwS/images-7.jpg",
         "category": "Phone",
@@ -112,7 +112,7 @@
         "rating": 4.5
       },
       {
-        "product_id": "02",
+        "product_id": "42",
         "product_title": "iPhone 13 Pro",
         "product_image": "https://i.ibb.co.com/xqJdHzY/images-9.jpg",
         "category": "Phone",
@@ -127,7 +127,7 @@
         "rating": 4.8
       },
       {
-        "product_id": "03",
+        "product_id": "43",
         "product_title": "Google Pixel 6",
         "product_image": "https://i.ibb.co.com/j4wWYdC/images-10.jpg",
         "category": "Phone",
@@ -143,7 +143,7 @@
         "rating": 4.6
       },
       {
-        "product_id": "04",
+        "product_id": "44",
         "product_title": "OnePlus 9",
         "product_image": "https://i.ibb.co.com/8KyRZ7C/images-11.jpg",
         "category": "Phone",
