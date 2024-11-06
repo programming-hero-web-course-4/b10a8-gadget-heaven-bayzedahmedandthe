@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 
 
 const Product = ({product}) => {
+    console.log(product);
 
-    const {product_image, product_title, price, product_id } = product;
+    const {product_image, product_title, price, product_id } = product || {};
     // const navigate = useNavigate
     // const handleDetail = () => {
     //     navigate(`/product/${product_id}`)

@@ -10,6 +10,7 @@ import Home from './Components/Home/Home';
 import Error from './Components/Error/Error';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Deshboard from './Components/Deshboard/Deshboard';
+import ProductCards from './Components/productCards/ProductCards';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,8 +19,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        loader: () => fetch('/data.json'),
-        element: <Home></Home>
+        loader: () => fetch('../Categories.json'),
+        element: <Home></Home>,
+        children: [
+          {
+            path: "/",
+            element: <ProductCards></ProductCards>,
+            loader: () => fetch('../data.json')
+          },
+          {
+            path: "category/:category",
+            element: <ProductCards></ProductCards>,
+            loader: () => fetch('../data.json')
+          }
+        ]
       },
       {
         path: "product/:product_id",
@@ -30,7 +43,8 @@ const router = createBrowserRouter([
         path: "deshboard",
         loader: () => fetch('/data.json'),
         element: <Deshboard></Deshboard>
-      }
+      },
+   
  
     ],
   },

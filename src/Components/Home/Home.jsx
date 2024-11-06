@@ -1,8 +1,19 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import Product from "../Product/Product";
 import bannerImg from "../../assets/banner.jpg"
+import { useEffect, useState } from "react";
+import Categories from "../Category/Categories";
+
+
 const Home = () => {
     const data = useLoaderData();
+    const [category, setCategory] = useState([]);
+
+    useEffect(() => {
+        fetch('./Categories.json')
+            .then(res => res.json())
+            .then(data => setCategory(data))
+    }, []);
     return (
         <div className=" w-11/12 mx-auto ">
 
@@ -19,22 +30,19 @@ const Home = () => {
                     <img className="border-2 p-4 lg:h-[580px] lg:w-[1110px] rounded-xl mx-auto " src={bannerImg} alt="" />
                 </div>
             </div>
-            <div className="lg:flex gap-10">
-                <div className="bg-white h-[455px] rounded-2xl px-10 py-4 ">
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl">All Product</button><br />
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">Laptops</button><br />
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">IPhone</button><br />
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">Smart Watches</button><br />
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">Accessorise</button><br />
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">MacBook</button><br />
-                    <button className="bg-gray-200 w-32 py-2 rounded-3xl mt-6">phones</button>
-                </div>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
 
+            <div className="lg:flex gap-10">
+
+                <div >
+                    <div className="bg-white px-10 rounded-2xl ">
+                    <NavLink><button className="bg-gray-300 w-32 py-2 rounded-3xl my-5">All Products</button></NavLink>
+                    </div>
                     {
-                        data.map(product => <Product key={product.product_id} product={product}></Product>)
+                        category.map(cate => <Categories key={cate.product_id} categories={cate}></Categories>)
                     }
+
                 </div>
+                <Outlet></Outlet>
             </div>
         </div>
     );

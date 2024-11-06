@@ -51,9 +51,9 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="navbar-end flax gap-4">
-                            <h3 className=" h-12 w-12 rounded-full flex  pt-2 bg-white relative"><p className="pl-2 pt-[3px] text-2xl"><PiShoppingCart /></p>
-                            <h5 className="text-red-700 font-medium text-2xl  pl-[2px] p-b-[8px] ">{products.length}</h5>
-                            </h3>
+                            <h5 className=" h-12 w-12 rounded-full flex  pt-2 bg-white relative"><p className="pl-2 pt-[3px] text-2xl"><PiShoppingCart /></p>
+                            <h3 className="text-red-700 font-medium text-2xl  pl-[2px] p-b-[8px] ">{products.length}</h3>
+                            </h5>
                             <button className=" h-12 w-12 rounded-full flex justify-center pt-[3px] bg-white text-2xl"><p className="pt-2"><GiSelfLove /></p></button>
                         </div>
                     </div>
