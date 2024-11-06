@@ -1,5 +1,4 @@
 import { NavLink, Outlet, useLoaderData } from "react-router-dom";
-import Product from "../Product/Product";
 import bannerImg from "../../assets/banner.jpg"
 import { useEffect, useState } from "react";
 import Categories from "../Category/Categories";
@@ -35,7 +34,7 @@ const Home = () => {
 
                 <div >
                     <div className="bg-white px-10 rounded-2xl ">
-                    <NavLink><button className="bg-gray-300 w-32 py-2 rounded-3xl my-5">All Products</button></NavLink>
+                    <NavLink><button className="bg-gray-300 w-32 py-2 rounded-3xl my-5 font-bold hover:bg-[#9538E2] hover:text-white">All Products</button></NavLink>
                     </div>
                     {
                         category.map(cate => <Categories key={cate.product_id} categories={cate}></Categories>)

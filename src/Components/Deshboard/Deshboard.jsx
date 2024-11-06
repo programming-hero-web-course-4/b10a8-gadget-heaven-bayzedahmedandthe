@@ -2,28 +2,16 @@ import { useEffect, useState } from 'react';
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getAllProducts } from '../../Utils';
-import { useLoaderData } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Card from '../Card/Card';
 import vactor from "../../assets/Frame (5).png"
 
 const Deshboard = () => {
-    // const allProduct = useLoaderData();
-
-    // useEffect(() => {
-    //     
-    //     const addProductInt = addProduct.map(product_id => parseInt(product_id));
-    //     const productAdd = allProduct.filter(pr => addProductInt.includes(pr.product_id));
-    //   setProducts(productAdd);
-
-    //     console.log( allProduct, addProductInt, addProduct);
-    // }, []);
     const [products, setProducts] = useState([]);
     useEffect(() => {
         const addProduct = getAllProducts();
         setProducts(addProduct);
     }, [])
-
-
     return (
         <div>
             <div className="bg-[#9538E2]">
@@ -31,7 +19,7 @@ const Deshboard = () => {
                 <p className="text-white text-center">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
                 <div className="flex items-center gap-8 justify-center mt-6 mb-6 ">
                     <button className="font-extrabold px-6 py-3 border-2 rounded-3xl text-white">Cart</button>
-                    <button className="font-extrabold px-6 py-3 border-2 text-white rounded-3xl">Wishlist</button>
+                    <NavLink to='/wishlist'><button className="font-extrabold px-6 py-3 border-2 text-white rounded-3xl">Wishlist</button></NavLink>
                 </div>
                 <div className="h-[20px]">
                 </div>

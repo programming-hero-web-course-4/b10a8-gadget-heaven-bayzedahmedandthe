@@ -36,18 +36,20 @@ const Navbar = () => {
                                     className=" menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                     <li className="text-white"><NavLink to="/">Home </NavLink></li>
 
-                                    <li><a>Statistics</a></li>
-                                    <li ><Link to={'/deshboard'}>Deshboard</Link></li>
+                                    <li className="hover:bg-fuchsia-300 hover:rounded-3xl "><a>Statistics</a></li>
+                                    <li className="hover:bg-fuchsia-300 hover:rounded-3xl "><Link to={'/deshboard'}>Deshboard</Link></li>
+                                    <li className="hover:bg-fuchsia-300 hover:rounded-3xl "><Link to='/about'>Discount</Link></li>
                                 </ul>
                             </div>
                             <a className="text-xl font-bold text-white">Gadget Heaven</a>
                         </div>
-                        <div className="navbar-center hidden lg:flex relative">
-                            <ul className=" menu-horizontal  px-1">
-                                <li className="text-white "><NavLink to="/">Home </NavLink></li>
+                        <div className="navbar-center hidden lg:flex relative items-center">
+                            <ul className=" menu-horizontal items-center  px-1">
+                                <li className="text-white px-4 py-2 hover:bg-fuchsia-700 hover:rounded-3xl"><NavLink to="/">Home </NavLink></li>
 
-                                <li className="text-white pl-6"><a>Statistics</a></li>
-                                <li className="text-white pl-6"><Link to={'/deshboard'}>Deshboard</Link></li>
+                                <li className="text-white px-4 py-2 ml-6 hover:bg-fuchsia-700 hover:rounded-3xl"><NavLink to={'/statics'}>Statistics</NavLink></li>
+                                <li className="text-white px-4 py-2 ml-6 hover:bg-fuchsia-700 hover:rounded-3xl"><Link to={'/deshboard'}>Deshboard</Link></li>
+                                <li className="text-white px-4 py-2 ml-6 hover:bg-fuchsia-700 hover:rounded-3xl "><Link to='/about'>Discount</Link></li>
                             </ul>
                         </div>
                         <div className="navbar-end flax gap-4">
