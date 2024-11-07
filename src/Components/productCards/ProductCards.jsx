@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 const ProductCards = () => {
     const data = useLoaderData();
-    console.log(data);
     const {category} = useParams();
     const [product, setProduct] = useState([]);
     useEffect(() => {

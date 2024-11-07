@@ -11,7 +11,6 @@ import Error from './Components/Error/Error';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Deshboard from './Components/Deshboard/Deshboard';
 import ProductCards from './Components/productCards/ProductCards';
-import Statistic from './Components/Statistics/Statistics'
 import WishList from './Components/WishList/WishList';
 import AboutUs from './Components/AboutUs/AboutUs';
 const router = createBrowserRouter([
@@ -46,10 +45,6 @@ const router = createBrowserRouter([
         path: "deshboard",
         loader: () => fetch('/data.json'),
         element: <Deshboard></Deshboard>
-      },
-      {
-        path: "/statics",
-        element: <Statistic></Statistic>
       },
       {
         path: "/wishlist",

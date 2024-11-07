@@ -2,7 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaDollarSign } from "react-icons/fa6";
 import { PiShoppingCart } from "react-icons/pi";
 import { GiSelfLove } from "react-icons/gi";
-import { addProducts, addWishList } from "../../Utils";
+import { addProducts, addWishList} from "../../Utils";
 import { useState } from "react";
 
 const ProductDetails = () => {
@@ -13,10 +13,11 @@ const ProductDetails = () => {
     const { product_image, product_title, price, description, specification, rating } = product || {};
 
     const handleAdd = (product) => {
-        addProducts(product)
+        addProducts(product)   
     }
     const handleAddWish = (product) => {
-        addWishList(product)
+        addWishList(product);
+        
     }
     return (
         <div >
@@ -57,7 +58,7 @@ const ProductDetails = () => {
                         <div className="flex items-center gap-3 pt-4">
                             <button
                             onClick={() => handleAdd(product)}
-                                className="font-bold flex items-center gap-2 bg-[#9538E2] px-4 py-2 rounded-3xl text-white">Add to cart <p className="text-2xl"><PiShoppingCart /></p></button>
+                                className="font-bold flex items-center gap-2 hover:border-[#9538E2] bg-[#9538E2] hover:text-[#9538E2] hover:bg-gray-300 hover: px-4 py-2 rounded-3xl text-white">Add to cart <p className="text-2xl"><PiShoppingCart /></p></button>
                             <button
                              onClick={() => handleAddWish(product)}
                              className="border-2 rounded-full p-3"><GiSelfLove /></button>

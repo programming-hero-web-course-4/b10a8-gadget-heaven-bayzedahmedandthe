@@ -1,3 +1,4 @@
+import { useState } from "react";
 import toast from "react-hot-toast";
 
 const getAllProducts = () => {
@@ -46,4 +47,5 @@ const addWishList = (product) => {
     toast.success('Wish Successfull')
 }
 
-export { addProducts, getAllProducts, addWishList,getWishList  }
+
+export { addProducts, getAllProducts, addWishList,getWishList }

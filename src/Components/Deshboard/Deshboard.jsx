@@ -11,7 +11,7 @@ const Deshboard = () => {
     useEffect(() => {
         const addProduct = getAllProducts();
         setProducts(addProduct);
-    }, [])
+    }, []);
     return (
         <div>
             <div className="bg-[#9538E2]">

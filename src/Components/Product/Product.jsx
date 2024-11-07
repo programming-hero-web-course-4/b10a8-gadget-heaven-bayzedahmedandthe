@@ -5,13 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Product = ({product}) => {
-    console.log(product);
-
     const {product_image, product_title, price, product_id } = product || {};
-    // const navigate = useNavigate
-    // const handleDetail = () => {
-    //     navigate(`/product/${product_id}`)
-    // };
     return (
         <div className="bg-white p-4 rounded-xl ">
             <img className=" rounded-xl lg:h-[170px] flex mx-auto w-full" src={product_image} alt="" />
